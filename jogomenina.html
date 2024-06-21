@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogo da Aluna</title>
+
+  <style>
+    body {
+        background-color: rgb(183, 181, 181);
+    }
+    #game-container {
+      width: 26rem;
+      height: 28rem;
+      border: 0.8rem groove indigo;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      margin: auto;
+    }
+    #character {
+      width: 3.8rem;
+      height: 8.5rem;
+      background-image: url('menina.png');
+      background-size: cover;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .element {
+      width: 2.6rem;
+      height: 2.6rem;
+      position: absolute;
+      border-radius: 50%;
+    }
+    .positive {
+      background-image: url('formatura.png');
+      background-size: cover;
+    }
+    .negative {
+      background-image: url('prova.png');
+      background-size: cover;
+    }
+
+    .meninadez{
+      background-image: url('meninadez.png');
+      background-size: cover;
+    }
+    .meninaestrela{
+      background-image: url('meninaestrela.png');
+      background-size: cover;
+    }
+    .meninalacrou{
+      background-image: url('meninalacrou.png');
+      background-size: cover;
+    }
+     .meninatempoacabou{
+      background-image: url('meninatempoacabou.png');
+      background-size: cover;
+    }
+    #score {
+      position: absolute;
+      top: 2rem;
+      left: 50%;
+      transform: translateX(-50%);
+      color: indigo;
+    }
+    #timer {
+      position: absolute;
+      top: 2rem;
+      right: 2rem;
+      color: indigo;
+    }
+  </style>
+
+</head>
+<body>
+  <div id="score">Pontos: 0</div>
+  <div id="timer">Tempo: 20s</div>
+  <div id="game-container">
+    <div id="character"></div>
+  </div>
+  <script src="jogomenina.js"></script>
+</body>
+</html>
+
